@@ -32,7 +32,6 @@ def store_image(cursor, filename, feature_vector):
             (%s, %s)
     '''
 
-    print 'Insert {}'.format(filename)
     cursor.execute(statement, (filename, convert_to_memsql_vector(feature_vector)))
 
 
